@@ -1,0 +1,28 @@
+### Raiz do Projeto
+GET http://localhost:5153
+
+
+### Cadastrar Produto
+POST http://localhost:5153/api/folha/cadastrar
+Content-Type: application/json
+
+{
+    "nome": "Ana Souza 2",
+    "cpf": "123.456.789-01",
+    "mes": 10,
+    "ano": 2025,
+    "horasTrabalhadas": 160,
+    "valorHora": 50
+}
+
+### Listar Produtos
+GET http://localhost:5153/api/folha/listar
+
+### busca Produtos
+GET http://localhost:5153/api/folha/buscar/123.456.789-00/10/2025
+
+### Remover
+DELETE http://localhost:5153/api/folha/remover/123.456.789-00/10/2025
+
+### Listar Produtos
+GET http://localhost:5153/api/folha/total-liquido
